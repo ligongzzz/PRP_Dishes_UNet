@@ -26,8 +26,7 @@ L2_REGULATION = 1e-5
 print('Connecting to ssh server...')
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect(hostname='120.27.241.203', port=22,
-            username='prp', password='00000000')
+
 print('Connected to server.')
 
 # Tensor to storage the images and masks.
